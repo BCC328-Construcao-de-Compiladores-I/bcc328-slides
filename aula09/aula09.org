@@ -1,0 +1,39 @@
+#+OPTIONS: num:nil toc:nil
+#+OPTIONS: date:nil reveal_mathjax:t
+#+OPTIONS: tex t
+#+OPTIONS: timestamp:nil
+#+OPTIONS: org-confirm-babel-evaluate nil
+#+REVEAL_THEME: white
+#+REVEAL_HLEVEL: 1
+#+REVEAL_ROOT: file:///home/rodrigo/reveal.js
+
+#+Title: Gramáticas LL(1)
+#+Author: Construção de compiladores I
+
+
+* Objetivos
+
+** Objetivos
+
+- Apresentar os conjuntos first e follow e seu uso para definir gramáticas LL(1)
+
+- Apresentar um algoritmo, baseado em tabela, para análise sintática de gramáticas LL(1)
+
+
+* Gramáticas LL(1)
+
+** Gramáticas LL(1)
+
+- Classe de gramáticas que admitem analisadores sem backtracking
+
+- LL(1) significa
+  - *L*eft to right: entrada analisada da esquerda para direita.
+  - *L*eft most derivation: construção de derivação mais a esquerda.
+  - Uso de *1* token da entrada para decidir a derivação.
+
+** Gramáticas LL(1)
+
+- Como determinar se uma gramática é LL(1)?
+  - Vamos usar os conjuntos First e Follow.
+
+

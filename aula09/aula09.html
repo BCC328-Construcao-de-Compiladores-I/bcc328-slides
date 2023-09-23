@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Gramáticas LL(1)</title>
+<meta name="author" content="Construção de compiladores I"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/rodrigo/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/rodrigo/reveal.js/dist/theme/white.css" id="theme"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Gramáticas LL(1)</h1><h2 class="author">Construção de compiladores I</h2>
+</section>
+
+
+<section>
+<section id="slide-orgb1f0176">
+<h2 id="orgb1f0176">Objetivos</h2>
+<div class="outline-text-2" id="text-orgb1f0176">
+</div>
+</section>
+<section id="slide-orge3fd202">
+<h3 id="orge3fd202">Objetivos</h3>
+<ul>
+<li>Apresentar os conjuntos first e follow e seu uso para definir gramáticas LL(1)</li>
+
+<li>Apresentar um algoritmo, baseado em tabela, para análise sintática de gramáticas LL(1)</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgac19e8a">
+<h2 id="orgac19e8a">Gramáticas LL(1)</h2>
+<div class="outline-text-2" id="text-orgac19e8a">
+</div>
+</section>
+<section id="slide-orga001153">
+<h3 id="orga001153">Gramáticas LL(1)</h3>
+<ul>
+<li>Classe de gramáticas que admitem analisadores sem backtracking</li>
+
+<li>LL(1) significa
+<ul>
+<li>*L*eft to right: entrada analisada da esquerda para direita.</li>
+<li>*L*eft most derivation: construção de derivação mais a esquerda.</li>
+<li>Uso de <b>1</b> token da entrada para decidir a derivação.</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/rodrigo/reveal.js/dist/reveal.js"></script>
+<script src="file:///home/rodrigo/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="file:///home/rodrigo/reveal.js/plugin/notes/notes.js"></script>
+<script src="file:///home/rodrigo/reveal.js/plugin/search/search.js"></script>
+<script src="file:///home/rodrigo/reveal.js/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+transition: 'convex',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
